@@ -1,0 +1,156 @@
+:root {
+  --bg1: #d8a84e;
+  --bg2: #dbcbad;
+}
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: linear-gradient(to bottom, var(--bg2), white);
+  font-family: "Tajawal", sans-serif;
+  text-align: center;
+  direction: rtl;
+}
+body .header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--bg1);
+  color: white;
+  font-weight: bold;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+}
+body .header a {
+  font-family: "Tahoma";
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+body .content {
+  position: relative;
+  height: 85%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+body .content .welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+body .content .welcome .welcomeTitle {
+  font-size: 25px;
+}
+body .content .button {
+  margin: 20px;
+}
+body .content .btn {
+  text-decoration: none;
+  background-color: var(--bg1);
+  color: white;
+  padding: 5px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body .content .btn:hover {
+  background-color: rgba(216, 168, 78, 0.5);
+}
+body .content .categorys {
+  color: white;
+  padding: 10px;
+}
+body .content .categorys a {
+  text-decoration: none;
+  color: white;
+}
+body .content .categorys .categorybtn {
+  position: relative;
+  display: inline-block;
+  width: 46%;
+  margin: 5px;
+  box-sizing: border-box;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+body .content .categorys .categorybtn .name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 20px 5px;
+  font-weight: bold;
+  width: 100%;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to top, black, transparent);
+}
+body .content .item {
+  position: relative;
+  padding: 10px;
+  margin: 5px 0;
+  height: 200px;
+}
+body .content .item a {
+  color: black;
+}
+body .content .item .image {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0%, -50%);
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+}
+body .content .item .title {
+  position: absolute;
+  right: 40px;
+  top: 30%;
+  text-align: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+body .content .item .description {
+  position: absolute;
+  right: 3%;
+  bottom: -20px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  padding: 20px 0;
+}
+body .content.insideDescript img {
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+body .content.insideDescript .d {
+  padding: 5px;
+  text-align: right;
+  font-weight: bold;
+}
+body .footer {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body .footer img {
+  width: 20px;
+}
+body .footer a {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
